@@ -145,5 +145,5 @@ TODO:
 
 # Contribute
 TODO: Explain how other users and developers can contribute to make your code better.
-1. The model still needs to be used to correlate to bitcoin prices
+
 
