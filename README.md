@@ -15,7 +15,10 @@ https://huggingface.co/ElKulako/cryptobert
 https://huggingface.co/datasets/ElKulako/stocktwits-crypto (Nov 1 Update)
 
 
-# Getting Started
+
+<details>
+    <summary> Step-1: Getting Started </summary>
+
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
 1.	Installation process
     Download from Git : 
@@ -27,6 +30,7 @@ TODO: Guide users through getting your code up and running on their own system. 
     - https://docs.tweepy.org/en/v4.0.1/
     - https://docs.tweepy.org/en/v4.0.1/client.html
 
+<details>
 
 # Build and Test
 TODO: Describe and show how to build your code and run the tests.
