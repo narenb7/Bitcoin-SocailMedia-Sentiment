@@ -30,7 +30,7 @@ TODO: Guide users through getting your code up and running on their own system. 
     - https://docs.tweepy.org/en/v4.0.1/
     - https://docs.tweepy.org/en/v4.0.1/client.html
 
-
+</details>
 
 # Build and Test
 TODO: Describe and show how to build your code and run the tests.
