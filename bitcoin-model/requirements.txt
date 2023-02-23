@@ -1,0 +1,12 @@
+uvicorn
+tweepy==4.10.1
+transformers
+fastapi
+python-dotenv
+tritonclient[http]
+scipy
+torch
+numpy
+requests
+pyyaml
+pandas

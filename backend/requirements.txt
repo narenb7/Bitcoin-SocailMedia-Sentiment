@@ -1,0 +1,9 @@
+uvicorn[standard]
+tweepy
+pandas
+pathlib
+fastapi
+sse_starlette
+asyncio
+python-dotenv
+jinja2

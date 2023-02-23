@@ -1,0 +1,6 @@
+uvicorn
+fastapi
+pandas
+requests
+sse_starlette
+jinja2
