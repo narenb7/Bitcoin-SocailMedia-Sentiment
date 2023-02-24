@@ -32,14 +32,15 @@ TODO: Guide users through getting your code up and running on their own system. 
 
 </details>
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests.
-- Create the following the folder from which docker-compose resides
+<details>
+    <summary> Step-2: # Build and Test </summary>
+
+1. Create the following the folder from which docker-compose resides
     * Create a .env file with a twitter developer account BEARER_TOKEN="xxxx" in the project folder.
     * Create an .aws.env file with aws access parameters
     * run "aws config" configure access parameters
 
-- Uploading Triton server model.
+2. Uploading Triton server model.
     * In bitcoin-model/conversion folder run "python cryptobert_2_triton_tracking_batch.py" to generate the trition model in the following structure and automatically upload to the S3 bucket: fb-bitcoin-capstone
         *  trition-model
         *  ├── bitcoin-model'
@@ -48,7 +49,7 @@ TODO: Describe and show how to build your code and run the tests.
         *  │   └── config.pbtxt
 
 
-![Data Pipeline](./pictures/DataPipeline.png)
+</details>
 
 
 - Data in dvc 
