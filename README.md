@@ -33,7 +33,7 @@ TODO: Guide users through getting your code up and running on their own system. 
 </details>
 
 <details>
-    <summary> Step-2: # Build and Test </summary>
+    <summary> Step-2: Build and Test </summary>
 
 1. Create the following the folder from which docker-compose resides
     * Create a .env file with a twitter developer account BEARER_TOKEN="xxxx" in the project folder.
@@ -49,10 +49,7 @@ TODO: Guide users through getting your code up and running on their own system. 
         *  │   └── config.pbtxt
 
 
-</details>
-
-
-- Data in dvc 
+3. Data in dvc 
     The bitcoin tweets for training is in the data folder
     * Install DVC with (pip3 install dvc)
     * Install DVC with (pip3 install dvc[s3])
@@ -65,7 +62,7 @@ TODO: Guide users through getting your code up and running on their own system. 
     * dvc push
     * git push
 
-- Triton model in dvc
+4. Triton model in dvc
 * cp triton-model folder a triton-model folder same level as conversion (one level up) 
 * dvc add triton-model/
 * git add triton-model.dvc .gitignore (and any other files)
@@ -75,22 +72,26 @@ TODO: Guide users through getting your code up and running on their own system. 
 * note: update example: dvc remove model.dvc/ dvc add model
 
 
-- Retraining 
+5. Retraining 
     * In bitcoin-model/folder run "python retraining.py".  Data is already in the right place to retrain.  It already incorporates all the MLflow logging.
       - Use "dvc pull" command in the repo folder to get data and make sure the data folder in in bitcoin-model/data for retraining
 
-- EC2 installation
+6. EC2 installation
     * https://github.com/FourthBrain/MLO-4/tree/main/assignments/week-4#readme 
     * Triton inference server, the main app, and the bitcoin-sentiment app were all launched in seperate containers using the right requirements.txt, dockerfile, and docker-compose.yaml
      using "docker-compose --file docker-compose.yaml up --build" command. 
 
-- Dagshub integration
+7. Dagshub integration
     * https://dagshub.com/fb.capstone/fb-bitcoining
         * The model and data are reflected in the view because of dvc integraton (from git)
         * There is also one experiment tracked - to track the generation of the triton inference model (by using data logger and pushing logs/ folder into git)
 
+    
+</details>
 
-# Montoring and Observability
+<details>
+<summary> Step-3: Montoring and Observability</summary>
+
 
 1.0 Setup Steps
 
@@ -119,6 +120,8 @@ TODO: Guide users through getting your code up and running on their own system. 
 - Avereage queue time per Request
 - Failure Per 30 seconds
 
+</details>
+    
 Going to use failure alert for triggering retrianing
 We wanted to use BOXKITE to show the data drift through KL Divergence metric or KS-Test
 We are working to monitor Triton Inference docker containers metrics
