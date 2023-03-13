@@ -34,7 +34,7 @@ TODO: Guide users through getting your code up and running on their own system. 
 </details>
 
 <details>
-    <summary> Step-2: Build and Test </summary>
+    <summary> Step-2: Build, Train and Test </summary>
 
 1. Create the following the folder from which docker-compose resides
     * Create a .env file with a twitter developer account BEARER_TOKEN="xxxx" in the project folder.
